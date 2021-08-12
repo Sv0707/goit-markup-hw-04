@@ -242,6 +242,19 @@ margin-left: 50px;
   width: 270px;
 }
 
+.advantages-list .test {
+  height: 120px;
+  width: 270px;
+  padding: 25px 100px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+}
+
+.advantages-list .icon {
+  width: 70px;
+  height: 70px;
+}
+
 .advantages-list .item + .item {
   margin-left: 30px;
 }
