@@ -100,6 +100,7 @@ body {
 
 .nav-list {
   display: flex;
+  align-items: center;
   margin-left: 93px;
 }
 
@@ -111,7 +112,13 @@ body {
 
 .contacts-list {
   display: flex;
+  align-items: center;
   margin-left: auto;
+}
+
+.contacts-list .item {
+  display: flex;
+  align-items: center;
 }
 
 .contacts-list .item + .item {
@@ -129,18 +136,23 @@ margin-left: 50px;
   text-decoration: none;
   }
 
+
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
   }
 
-.contacts-link::before {
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  content: '';
+.icon-header {
+  margin-right: 10px;
+  fill: var(--main-text-color);
+  
 }
 
+.icon-header:focus,
+.icon-header:hover {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
 /*hero*/
 
 .hero {
