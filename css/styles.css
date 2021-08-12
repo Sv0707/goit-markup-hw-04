@@ -127,6 +127,7 @@ margin-left: 50px;
 
 .contacts-link {
   color: var(--main-text-color);
+  fill: var(--main-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -140,19 +141,15 @@ margin-left: 50px;
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
+      fill: var(--accent-color);
+  cursor: pointer;
   }
 
 .icon-header {
   margin-right: 10px;
-  fill: var(--main-text-color);
   
 }
 
-.icon-header:focus,
-.icon-header:hover {
-  fill: var(--accent-color);
-  cursor: pointer;
-}
 /*hero*/
 
 .hero {
@@ -243,9 +240,11 @@ margin-left: 50px;
 }
 
 .advantages-list .test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   width: 270px;
-  padding: 25px 100px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
 }
@@ -312,6 +311,7 @@ margin-left: 50px;
 
 .our-team .text {
   margin-top: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
 }
@@ -320,6 +320,36 @@ margin-left: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
+}
+
+/*social links*/
+
+.social-links-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-links-item:not(:last-child) {
+margin-right: 10px;
+}
+
+.social-links-item .icon {
+  fill: #AFB1B8;
+}
+
+.social-links-item:hover,
+.social-links-item:focus {
+  background-color: var(--accent-color);
+  fill: white;
 }
 
 /*portfolio filter*/
