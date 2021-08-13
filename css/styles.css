@@ -141,7 +141,7 @@ margin-left: 50px;
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
-      fill: var(--accent-color);
+    fill: var(--accent-color);
   cursor: pointer;
   }
 
@@ -343,6 +343,7 @@ margin-right: 10px;
 }
 
 .social-links-item .icon {
+  display: block;
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
@@ -351,12 +352,12 @@ margin-right: 10px;
 .social-links-item:hover,
 .social-links-item:focus {
   background-color: var(--accent-color);
-  fill: white;
   cursor: pointer;
 }
 
-.social-links-item .icon:hover,
-.social-links-item .icon:focus {
+.social-links-item:hover .icon,
+.social-links-item:focus .icon {
+  display: block;
   fill: white;
   cursor: pointer;
 }
@@ -367,7 +368,7 @@ margin-right: 10px;
   display: flex;
 }
 
-.regular-customers-list .item {
+.regular-customers-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -377,18 +378,23 @@ margin-right: 10px;
   border-radius: 4px;
 }
 
-.regular-customers-list .item:not(:last-child) {
+.regular-customers-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.regular-customers-list .item:hover,
-.regular-customers-list .item:focus {
-  fill: var(--accent-color);
+.regular-customers-item:hover,
+.regular-customers-item:focus { 
   border: 1px solid var(--accent-color);
   cursor: pointer;
 }
 
-.regular-customers-link .icon {
+.regular-customers-item:hover .icon,
+.regular-customers-item:focus .icon {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
+.regular-customers-item .icon {
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
@@ -529,10 +535,6 @@ margin-right: 10px;
 
 .social-links-footer .icon {
   fill: #FFFFFF;
-}
-
-.social-links-footer .icon:hover {
-fill:brown;
 }
 
 .footer .logo {
